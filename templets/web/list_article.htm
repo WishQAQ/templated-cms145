@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/zhanoo_com/style.css" type="text/css" media="screen">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="织梦58" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/zhanoo_com/jquery.js"></script>
+</head>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/zhanoo_com/jquery.lazyload.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(
+function($){
+$(".conter_m img").lazyload({
+placeholder : "{dede:global.cfg_templets_skin/}/zhanoo_com/images/trans.png",
+effect      : "fadeIn"
+});
+});
+</script><!-- End 图片延迟加载 -->
+<body> 
+<!--head开始-->
+<script language="javascript" type="text/javascript">
+var obj=null;
+var As=document.getElementById('nav').getElementsByTagName('a');
+obj = As[0];
+for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
+obj=As[i];}
+obj.id='nav_current'
+</script> <!-- 当前导航高亮 -->
+{dede:include filename="head.htm"/}
+<!--head结束-->
+<div class="container">
+ <div class="clm2">
+ <!--左内容-->
+ <div class="s3">
+   <div class="xinshang">
+    <div class="xinshang_title">推荐图文</div>
+	<div class="xinshang_list">
+          <ul>
+            {dede:arclist row=10 titlelen=55 typeid=1,2,3,4,5,6 flag='c'}
+            <li><a href="[field:arcurl/]" title="[field:title /]" target="_blank"> <img width="70" height="50" src="[field:litpic/]" class="attachment-index-thumb wp-post-image" alt="[field:title /]"> </a>
+              <p><a href="[field:arcurl/]" target="_blank" class="txt5">[field:title /]</a></p>
+              <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+   </div>
+  <!--广告开始-->
+   <div class="ad2">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad008.jpg" width="250" height="275" border="0"></a>
+   		</div><!--广告结束-->
+   <div class="xinshang">
+    <div class="xinshang_title">热点图文</div>
+	<div class="xinshang_list">
+          <ul>
+            {dede:arclist orderby='hot' row='10' titlelen='55'}
+            <li><a href="[field:arcurl/]" title="[field:title /]" target="_blank"> <img width="70" height="50" src="[field:litpic/]" class="attachment-index-thumb wp-post-image" alt="[field:title /]"> </a>
+              <p><a href="[field:arcurl/]" target="_blank" class="txt5">[field:title /]</a></p>
+              <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+   </div>
+    <!--广告开始-->
+   <div class="ad2">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad003.jpg" width="250" height="240" border="0"></a>
+   		</div><!--广告结束-->
+  </div>
+  <!--左内容结束-->
+   <!--列表-->
+  <div class="s4">
+   <div class="content">
+    <div class="content_list">
+          <ul>
+            {dede:list pagesize='8' titlelen='65'}
+            <li>
+              <h1><a href="[field:arcurl/]" target="_blank" class="txt4" >[field:title/]</a></h1>
+              <span>发表于：[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> <span>分类：<a href="[field:typeurl/]" title="查看 [field:typename/] 中的全部文章" >[field:typename/]</a></span> <span>浏览次数：[field:click/]次</span> <a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img width="575" height="255" src="[field:litpic/]" class="attachment-home-thumb wp-post-image" alt="[field:title/]"> </a>
+              <p>[field:description function='cn_substr(@me,100)'/]…… </p>
+            </li>
+            {/dede:list}
+            <!--列表--end-->
+          </ul>
+        </div>
+      <!--分页-->
+    <div class="dede_pages">
+      <ul class="pagelist">
+         {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+      </ul>
+</div> <!--分页end-->
+  </div>
+ </div>
+  <!--中间内容结束-->
+  <!--右内容-->
+  <div class="s2">
+<!--广告开始-->
+   <div class="ad3">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad006.jpg" width="260" height="275" border="0"></a>
+   		</div><!--广告结束-->
+   		   		<!--广告开始-->
+   <div class="ad1">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad007.jpg" width="260" height="150" border="0"></a>
+   		</div><!--广告结束-->
+   <div class="hot">
+    <div class="hot_title">随机文章</div>
+	<div class="hot_list">
+	  <ul>
+      {dede:arclist row=10 orderby=rand}
+      <li><a href="[field:arcurl/]" target="_blank" class="txt6">[field:title/]</a></li>
+		{/dede:arclist}
+ </ul>
+	  </div>
+   </div>
+   <!--广告开始-->
+   <div class="ad3">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad005.jpg" width="260" height="275" border="0"></a>
+   		</div><!--广告结束-->
+   <div class="hot">
+    <div class="hot_title">全站最新</div>
+	<div class="hot_list">
+	  <ul>
+      
+		{dede:arclist row='10' typeid='top'}
+        <li><a href="[field:arcurl/]" target="_blank" class="txt6">[field:title /]</a></li>
+        {/dede:arclist}
+       	    </ul>
+	  </div>
+   </div>
+   <!--广告开始-->
+   <div class="ad1">
+   	<a href="#" target="_blank">
+   		<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad004.jpg" width="260" height="275" border="0"></a>
+   		</div><!--广告结束-->
+  </div>  <!--右内容结束-->
+ </div>
+</div>
+<!--tooter-->
+﻿{dede:include filename="foot.htm"/}
+
+</body></html>

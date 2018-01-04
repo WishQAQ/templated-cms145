@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/zhanoo_com/style.css" type="text/css" media="screen">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="dede58.com" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/zhanoo_com/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/zhanoo_com/coin-slider.js"></script>
+<script type="text/javascript">
+	var $jquery = jQuery.noConflict(); 
+	$jquery(document).ready(function() 
+	{
+		$jquery('#wpcontent_slider').coinslider(
+	{ 
+	width: 570, 
+	height: 385, 
+	spw: 7, 
+	sph: 5, 
+	delay: 2000, 
+	sDelay: 30, 
+	opacity: 0.7, 
+	titleSpeed: 500, 
+	effect: 'straight', 
+	navigation: true, 
+	links : true, 
+	hoverPause: true });
+		});
+	</script>
+<style type="text/css" media="screen">
+#wpcontent_slider_container {
+	overflow: hidden;
+	position: relative;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	width:570px !important;
+	height:385px !important;
+}
+#wpcontent_slider {
+	overflow: hidden;
+	position: relative;
+	border:0px solid #ffffff;
+	text-align:left;
+}
+#wpcontent_slider a, #wpcontent_slider a img {
+	border: none;
+	text-decoration: none;
+	outline: none;
+}
+#wpcontent_slider h4, #wpcontent_slider h4 a {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	text-decoration:none;
+	font-size: 18px;
+	color:#000;
+}
+#wpcontent_slider .cs-title {
+	width: 100%;
+	padding: 10px;
+	background: #ffffff;
+	color: #000000;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: normal;
+	line-height: normal;
+}
+#wpcontent_slider_container .cs-prev, #wpcontent_slider_container .cs-next {
+	font-weight: bold;
+	background: #000000;
+	font-size: 28px;
+	font-family: "Courier New", Courier, monospace;
+	color: #ffffff !important;
+	padding: 0px 10px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#wpcontent_slider_container .cs-buttons {
+	font-size: 0px;
+	padding: 10px 0px 10px 0px;
+	margin:0px auto;
+	float:left;
+	clear:left;
+}
+#wpcontent_slider_container .cs-buttons a {
+	outline:none;
+	margin-left: 5px;
+	height: 10px;
+	width: 10px;
+	float: left;
+	border: 1px solid #000000;
+	color: #000000;
+	text-indent: -1000px;
+}
+#wpcontent_slider_container .cs-active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+#wpcs_link_love, #wpcs_link_love a {
+	display:none;
+}
+</style>
+<!-- End 幻灯播放样式 -->
+</head>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/zhanoo_com/jquery.lazyload.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(
+function($){
+$(".conter_m img").lazyload({
+placeholder : "{dede:global.cfg_templets_skin/}/zhanoo_com/images/trans.png",
+effect      : "fadeIn"
+});
+});
+</script>
+<!-- End 图片延迟加载 -->
+<body>
+<!--head开始-->
+<script language="javascript" type="text/javascript">
+var obj=null;
+var As=document.getElementById('nav').getElementsByTagName('a');
+obj = As[0];
+for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
+obj=As[i];}
+obj.id='nav_current'
+</script>
+<!-- 当前导航高亮 -->
+{dede:include filename="head_i.htm"/}
+<div class="container">
+  <div class="clm1">
+    <div class="s1">
+      <div class="recommend">
+        <div class="recommend_title">今日头条</div>
+        <div class="recommend_nr">
+          <!--幻灯开始-->
+          <div class="dapic">
+            <div id="wpcontent_slider_container">
+              <div id="wpcontent_slider"> {dede:arclist row=5 titlelen=60 typeid=1,2,3,4,5,6 flag='f'} <a href="[field:arcurl/]" title="[field:title /]" target="_blank"> <img src="[field:litpic/]" alt="[field:title /]" width="570" height="385" style="display: none; "> <span style="display: none; ">
+                <h4>[field:title /]</h4>
+                </span></a> {/dede:arclist} </div>
+            </div>
+          </div>
+          <!--幻灯结束-->
+          <ul id="sul">
+            <!--头条开始-->
+            {dede:arclist row=5 titlelen=60 typeid=1,2,3,4,5,6 flag='h'}
+            <li>
+              <div class="xiaopic"><a href="[field:arcurl/]" title="[field:title /]"  target="_blank"> <img src="[field:litpic/]" alt="[field:title /]" width="70" height="60"></a>
+                <p><a href="[field:arcurl/]" title="[field:title /]" class="txt3" target="_blank" >[field:title /]</a></p>
+                <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> </div>
+            </li>
+            {/dede:arclist}
+            <!--头条结束-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="s2">
+      <!--广告开始-->
+      <div class="ad1">
+       <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad001.jpg" width="260" height="275">
+      </div>
+      <!--广告结束-->
+      <!--广告开始-->
+      <div class="ad1" style=" height:110px; margin-top:10px;"> <a href="http://donew.taobao.com" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad002.jpg" alt="官方淘宝" width="260" height="110" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+  </div>
+  <div class="clm2">
+    <!--左内容-->
+    <div class="s3">
+      <div class="xinshang">
+        <div class="xinshang_title">推荐图文</div>
+        <div class="xinshang_list">
+          <ul>
+            {dede:arclist row=10 titlelen=55 typeid=1,2,3,4,5,6 flag='c'}
+            <li><a href="[field:arcurl/]" title="[field:title /]" target="_blank"> <img width="70" height="50" src="[field:litpic/]" class="attachment-index-thumb wp-post-image" alt="[field:title /]"> </a>
+              <p><a href="[field:arcurl/]" target="_blank" class="txt5">[field:title /]</a></p>
+              <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad2"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad008.jpg" width="250" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="xinshang">
+        <div class="xinshang_title">热点图文</div>
+        <div class="xinshang_list">
+          <ul>
+            {dede:arclist orderby='hot' row='10' titlelen='55'}
+            <li><a href="[field:arcurl/]" title="[field:title /]" target="_blank"> <img width="70" height="50" src="[field:litpic/]" class="attachment-index-thumb wp-post-image" alt="[field:title /]"> </a>
+              <p><a href="[field:arcurl/]" target="_blank" class="txt5">[field:title /]</a></p>
+              <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad2"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad003.jpg" width="250" height="240" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+    <!--左内容结束-->
+    <!--中间内容调用最新带图文章-->
+    <div class="s4">
+      <div class="content">
+        <div class="content_list">
+          <ul>
+            {dede:arclist row='8' titlelen='60'}
+            <li>
+              <h1><a href="[field:arcurl/]" target="_blank" class="txt4" >[field:title/]</a></h1>
+              <span>发表于：[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span> <span>分类：<a href="[field:typeurl/]" title="查看 [field:typename/] 中的全部文章" >[field:typename/]</a></span> <span>浏览次数：
+             [field:click/]
+              次</span> <a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img width="575" height="255" src="[field:litpic/]" class="attachment-home-thumb wp-post-image" alt="[field:title/]"> </a>
+              <p>[field:description function='cn_substr(@me,100)'/]…… </p>
+            </li>
+            {/dede:arclist}
+            <!--列表--end-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--中间内容结束-->
+    <!--右内容-->
+    <div class="s2">
+      <!--广告开始-->
+      <div class="ad3"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad004.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <!--广告开始-->
+      <div class="ad1"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad007.jpg" width="260" height="150" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="hot">
+        <div class="hot_title">刷机教程</div>
+        <div class="hot_list">
+          <ul>
+          {dede:arclist row='10' typeid='2' titlelen='40'}
+            <li><a href="[field:arcurl/]" target="_blank" class="txt6">[field:title/]</a></li>
+          {/dede:arclist}
+
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad3"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad005.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="hot">
+        <div class="hot_title">安卓资讯</div>
+        <div class="hot_list">
+          <ul>
+            {dede:arclist row='10' typeid='5' titlelen='40'}
+            <li><a href="[field:arcurl/]" target="_blank" class="txt6">[field:title/]</a></li>
+          {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad1"> <a href="#" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/zhanoo_com/ad006.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+    <!--右内容结束-->
+  </div>
+</div>
+<!--tooter-->
+﻿
+{dede:include filename="foot.htm"/}
+</body>
+</html>

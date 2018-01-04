@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/templets/web/zhanoo_com/style.css" type="text/css" media="screen">
+<title>安卓手机资讯宽屏织梦模板带数据-www.zhanoo.com</title>
+<meta name="description" content="这里填写网站描述" />
+<meta name="keywords" content="这里填写关键词" />
+<meta name="author" content="dede58.com" />
+<script type="text/javascript" src="/templets/web/zhanoo_com/jquery.js"></script>
+<script type="text/javascript" src="/templets/web/zhanoo_com/coin-slider.js"></script>
+<script type="text/javascript">
+	var $jquery = jQuery.noConflict(); 
+	$jquery(document).ready(function() 
+	{
+		$jquery('#wpcontent_slider').coinslider(
+	{ 
+	width: 570, 
+	height: 385, 
+	spw: 7, 
+	sph: 5, 
+	delay: 2000, 
+	sDelay: 30, 
+	opacity: 0.7, 
+	titleSpeed: 500, 
+	effect: 'straight', 
+	navigation: true, 
+	links : true, 
+	hoverPause: true });
+		});
+	</script>
+<style type="text/css" media="screen">
+#wpcontent_slider_container {
+	overflow: hidden;
+	position: relative;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	width:570px !important;
+	height:385px !important;
+}
+#wpcontent_slider {
+	overflow: hidden;
+	position: relative;
+	border:0px solid #ffffff;
+	text-align:left;
+}
+#wpcontent_slider a, #wpcontent_slider a img {
+	border: none;
+	text-decoration: none;
+	outline: none;
+}
+#wpcontent_slider h4, #wpcontent_slider h4 a {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	text-decoration:none;
+	font-size: 18px;
+	color:#000;
+}
+#wpcontent_slider .cs-title {
+	width: 100%;
+	padding: 10px;
+	background: #ffffff;
+	color: #000000;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: normal;
+	line-height: normal;
+}
+#wpcontent_slider_container .cs-prev, #wpcontent_slider_container .cs-next {
+	font-weight: bold;
+	background: #000000;
+	font-size: 28px;
+	font-family: "Courier New", Courier, monospace;
+	color: #ffffff !important;
+	padding: 0px 10px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#wpcontent_slider_container .cs-buttons {
+	font-size: 0px;
+	padding: 10px 0px 10px 0px;
+	margin:0px auto;
+	float:left;
+	clear:left;
+}
+#wpcontent_slider_container .cs-buttons a {
+	outline:none;
+	margin-left: 5px;
+	height: 10px;
+	width: 10px;
+	float: left;
+	border: 1px solid #000000;
+	color: #000000;
+	text-indent: -1000px;
+}
+#wpcontent_slider_container .cs-active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+#wpcs_link_love, #wpcs_link_love a {
+	display:none;
+}
+</style>
+<!-- End 幻灯播放样式 -->
+</head>
+<script type="text/javascript" src="/templets/web/zhanoo_com/jquery.lazyload.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(
+function($){
+$(".conter_m img").lazyload({
+placeholder : "/templets/web/zhanoo_com/images/trans.png",
+effect      : "fadeIn"
+});
+});
+</script>
+<!-- End 图片延迟加载 -->
+<body>
+<!--head开始-->
+<script language="javascript" type="text/javascript">
+var obj=null;
+var As=document.getElementById('nav').getElementsByTagName('a');
+obj = As[0];
+for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
+obj=As[i];}
+obj.id='nav_current'
+</script>
+<!-- 当前导航高亮 -->
+<div class="head">
+ 	<div class="header">
+  <!-- 导航开始 -->
+  <div class="menu">
+  <div id="nav">
+  <a href="/" title="织梦58">
+  	<img src="/templets/web/zhanoo_com/logo.png" alt="114源码网" width="141" height="23" border="0"></a>
+    <ul>
+    
+	  <li><a href="/" id='nav_current' >首页</a></li>
+
+      
+      <li><a href="/xitongpingce/">系统评测</a></li>
+      
+      <li><a href="/youxipingce/">游戏评测</a></li>
+      
+      <li><a href="/shuajijiaocheng/">刷机教程</a></li>
+      
+      <li><a href="/xinpinsudi/">新品速递</a></li>
+      
+      <li><a href="/anzhuozixun/">安卓资讯</a></li>
+      
+      <li><a href="/zhoubianshebei/">周边设备</a></li>
+      
+
+    </ul>
+    </div>
+    </div><!-- 导航结束 -->
+  <div class="head_right"><span>
+    <ul>
+      <li><a href="#" title="关注微博">
+      	<img src="/templets/web/zhanoo_com/weibo.png" alt="关注微博" width="25" height="20" border="0"></a></li>
+<!-- 搜索开始-->
+	  <li>
+	  	<form role="search" method="get" id="searchform" action="/plus/search.php" target="_blank">
+	  		<input class="search" type="text" name="q" value="search..." onfocus="if (value ==&#39;search...&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;search...&#39;}">
+	  		<input class="search_btn" type="submit" value=""></form>
+            
+         
+
+	  		</li><!-- 搜索结束 -->
+    </ul></span>
+    </div>
+ </div>	
+</div>
+<!--head结束-->
+<div class="container">
+  <div class="clm1">
+    <div class="s1">
+      <div class="recommend">
+        <div class="recommend_title">今日头条</div>
+        <div class="recommend_nr">
+          <!--幻灯开始-->
+          <div class="dapic">
+            <div id="wpcontent_slider_container">
+              <div id="wpcontent_slider"> <a href="/shuajijiaocheng/10.html" title="步步高vivo Xshot真机曝光 1300万像素将支持光学防" target="_blank"> <img src="/uploads/141027/1-14102G94G1438.jpg" alt="步步高vivo Xshot真机曝光 1300万像素将支持光学防" width="570" height="385" style="display: none; "> <span style="display: none; ">
+                <h4>步步高vivo Xshot真机曝光 1300万像素将支持光学防</h4>
+                </span></a>
+<a href="/xitongpingce/1.html" title="标配500万像素高清摄像头+美颜自拍 华为G6拍照神" target="_blank"> <img src="/uploads/140604/1-140604215F1P0.jpg" alt="标配500万像素高清摄像头+美颜自拍 华为G6拍照神" width="570" height="385" style="display: none; "> <span style="display: none; ">
+                <h4>标配500万像素高清摄像头+美颜自拍 华为G6拍照神</h4>
+                </span></a>
+ </div>
+            </div>
+          </div>
+          <!--幻灯结束-->
+          <ul id="sul">
+            <!--头条开始-->
+            <li>
+              <div class="xiaopic"><a href="/shuajijiaocheng/13.html" title="放心了！小米手机3移动TD版下个月获Android 4.4升级"  target="_blank"> <img src="/uploads/141027/1-14102G9562L60.jpg" alt="放心了！小米手机3移动TD版下个月获Android 4.4升级" width="70" height="60"></a>
+                <p><a href="/shuajijiaocheng/13.html" title="放心了！小米手机3移动TD版下个月获Android 4.4升级" class="txt3" target="_blank" >放心了！小米手机3移动TD版下个月获Android 4.4升级</a></p>
+                <span>2014-10-27</span> </div>
+            </li>
+<li>
+              <div class="xiaopic"><a href="/shuajijiaocheng/12.html" title="HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器"  target="_blank"> <img src="/uploads/allimg/141027/19543I209-0-lp.jpg" alt="HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器" width="70" height="60"></a>
+                <p><a href="/shuajijiaocheng/12.html" title="HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器" class="txt3" target="_blank" >HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器</a></p>
+                <span>2014-10-27</span> </div>
+            </li>
+<li>
+              <div class="xiaopic"><a href="/shuajijiaocheng/11.html" title="周一12点 魅族在线商店下单成功并付款可拿3000元"  target="_blank"> <img src="/uploads/allimg/141027/195344JY-0.jpg" alt="周一12点 魅族在线商店下单成功并付款可拿3000元" width="70" height="60"></a>
+                <p><a href="/shuajijiaocheng/11.html" title="周一12点 魅族在线商店下单成功并付款可拿3000元" class="txt3" target="_blank" >周一12点 魅族在线商店下单成功并付款可拿3000元</a></p>
+                <span>2014-10-27</span> </div>
+            </li>
+<li>
+              <div class="xiaopic"><a href="/youxipingce/9.html" title="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元"  target="_blank"> <img src="/uploads/allimg/141027/1944462917-3.jpg" alt="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元" width="70" height="60"></a>
+                <p><a href="/youxipingce/9.html" title="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元" class="txt3" target="_blank" >厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元</a></p>
+                <span>2014-10-27</span> </div>
+            </li>
+<li>
+              <div class="xiaopic"><a href="/youxipingce/2.html" title="不服气来跑个分呀！小米3S规格曝光 将采用MIUI"  target="_blank"> <img src="/uploads/140604/1-140604221012T1.jpg" alt="不服气来跑个分呀！小米3S规格曝光 将采用MIUI" width="70" height="60"></a>
+                <p><a href="/youxipingce/2.html" title="不服气来跑个分呀！小米3S规格曝光 将采用MIUI" class="txt3" target="_blank" >不服气来跑个分呀！小米3S规格曝光 将采用MIUI</a></p>
+                <span>2014-06-04</span> </div>
+            </li>
+
+            <!--头条结束-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="s2">
+      <!--广告开始-->
+      <div class="ad1">
+       <img src="/templets/web/zhanoo_com/ad001.jpg" width="260" height="275">
+      </div>
+      <!--广告结束-->
+      <!--广告开始-->
+      <div class="ad1" style=" height:110px; margin-top:10px;"> <a href="http://donew.taobao.com" target="_blank"> <img src="/templets/web/zhanoo_com/ad002.jpg" alt="官方淘宝" width="260" height="110" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+  </div>
+  <div class="clm2">
+    <!--左内容-->
+    <div class="s3">
+      <div class="xinshang">
+        <div class="xinshang_title">推荐图文</div>
+        <div class="xinshang_list">
+          <ul>
+            <li><a href="/shuajijiaocheng/8.html" title="近日有网友在北京市企业信用信息网上查到，" target="_blank"> <img width="70" height="50" src="/uploads/allimg/140606/22121W960-0.jpg" class="attachment-index-thumb wp-post-image" alt="近日有网友在北京市企业信用信息网上查到，"> </a>
+              <p><a href="/shuajijiaocheng/8.html" target="_blank" class="txt5">近日有网友在北京市企业信用信息网上查到，</a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/xinpinsudi/6.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/xinpinsudi/6.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/zhoubianshebei/5.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/zhoubianshebei/5.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/zhoubianshebei/4.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/zhoubianshebei/4.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/shuajijiaocheng/3.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/shuajijiaocheng/3.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad2"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad008.jpg" width="250" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="xinshang">
+        <div class="xinshang_title">热点图文</div>
+        <div class="xinshang_list">
+          <ul>
+            <li><a href="/shuajijiaocheng/8.html" title="近日有网友在北京市企业信用信息网上查到，" target="_blank"> <img width="70" height="50" src="/uploads/allimg/140606/22121W960-0.jpg" class="attachment-index-thumb wp-post-image" alt="近日有网友在北京市企业信用信息网上查到，"> </a>
+              <p><a href="/shuajijiaocheng/8.html" target="_blank" class="txt5">近日有网友在北京市企业信用信息网上查到，</a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/zhoubianshebei/5.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/zhoubianshebei/5.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/shuajijiaocheng/11.html" title="周一12点 魅族在线商店下单成功并付款可拿" target="_blank"> <img width="70" height="50" src="/uploads/allimg/141027/195344JY-0.jpg" class="attachment-index-thumb wp-post-image" alt="周一12点 魅族在线商店下单成功并付款可拿"> </a>
+              <p><a href="/shuajijiaocheng/11.html" target="_blank" class="txt5">周一12点 魅族在线商店下单成功并付款可拿</a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/xinpinsudi/6.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/xinpinsudi/6.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/shuajijiaocheng/13.html" title="放心了！小米手机3移动TD版下个月获Android " target="_blank"> <img width="70" height="50" src="/uploads/141027/1-14102G9562L60.jpg" class="attachment-index-thumb wp-post-image" alt="放心了！小米手机3移动TD版下个月获Android "> </a>
+              <p><a href="/shuajijiaocheng/13.html" target="_blank" class="txt5">放心了！小米手机3移动TD版下个月获Android </a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/xitongpingce/1.html" title="标配500万像素高清摄像头+美颜自拍 华为G6拍" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604215F1P0.jpg" class="attachment-index-thumb wp-post-image" alt="标配500万像素高清摄像头+美颜自拍 华为G6拍"> </a>
+              <p><a href="/xitongpingce/1.html" target="_blank" class="txt5">标配500万像素高清摄像头+美颜自拍 华为G6拍</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/zhoubianshebei/4.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/zhoubianshebei/4.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+<li><a href="/shuajijiaocheng/10.html" title="步步高vivo Xshot真机曝光 1300万像素将支持光学" target="_blank"> <img width="70" height="50" src="/uploads/141027/1-14102G94G1438.jpg" class="attachment-index-thumb wp-post-image" alt="步步高vivo Xshot真机曝光 1300万像素将支持光学"> </a>
+              <p><a href="/shuajijiaocheng/10.html" target="_blank" class="txt5">步步高vivo Xshot真机曝光 1300万像素将支持光学</a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/youxipingce/9.html" title="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千" target="_blank"> <img width="70" height="50" src="/uploads/allimg/141027/1944462917-3.jpg" class="attachment-index-thumb wp-post-image" alt="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千"> </a>
+              <p><a href="/youxipingce/9.html" target="_blank" class="txt5">厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千</a></p>
+              <span>2014-10-27</span> </li>
+<li><a href="/shuajijiaocheng/3.html" title="LG新机 L35 入门级的配置表明其主要面向低端" target="_blank"> <img width="70" height="50" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-index-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端"> </a>
+              <p><a href="/shuajijiaocheng/3.html" target="_blank" class="txt5">LG新机 L35 入门级的配置表明其主要面向低端</a></p>
+              <span>2014-06-04</span> </li>
+
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad2"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad003.jpg" width="250" height="240" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+    <!--左内容结束-->
+    <!--中间内容调用最新带图文章-->
+    <div class="s4">
+      <div class="content">
+        <div class="content_list">
+          <ul>
+            <li>
+              <h1><a href="/shuajijiaocheng/13.html" target="_blank" class="txt4" >放心了！小米手机3移动TD版下个月获Android 4.4升级</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/shuajijiaocheng/" title="查看 刷机教程 中的全部文章" >刷机教程</a></span> <span>浏览次数：
+             144
+              次</span> <a href="/shuajijiaocheng/13.html" title="放心了！小米手机3移动TD版下个月获Android 4.4升级" target="_blank"> <img width="575" height="255" src="/uploads/141027/1-14102G9562L60.jpg" class="attachment-home-thumb wp-post-image" alt="放心了！小米手机3移动TD版下个月获Android 4.4升级"> </a>
+              <p>MIUI开发工程师，小米生态链产品规划总监孙鹏今天通过微博确认，小米手机3移…… </p>
+            </li>
+<li>
+              <h1><a href="/shuajijiaocheng/12.html" target="_blank" class="txt4" >HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/shuajijiaocheng/" title="查看 刷机教程 中的全部文章" >刷机教程</a></span> <span>浏览次数：
+             66
+              次</span> <a href="/shuajijiaocheng/12.html" title="HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器" target="_blank"> <img width="575" height="255" src="/uploads/allimg/141027/19543I209-0-lp.jpg" class="attachment-home-thumb wp-post-image" alt="HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器"> </a>
+              <p>推出旗舰机的mini版是现如今许多手机厂商喜欢干的事情，也颇受用户的欢迎。…… </p>
+            </li>
+<li>
+              <h1><a href="/shuajijiaocheng/11.html" target="_blank" class="txt4" >周一12点 魅族在线商店下单成功并付款可拿3000元</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/shuajijiaocheng/" title="查看 刷机教程 中的全部文章" >刷机教程</a></span> <span>浏览次数：
+             157
+              次</span> <a href="/shuajijiaocheng/11.html" title="周一12点 魅族在线商店下单成功并付款可拿3000元" target="_blank"> <img width="575" height="255" src="/uploads/allimg/141027/195344JY-0.jpg" class="attachment-home-thumb wp-post-image" alt="周一12点 魅族在线商店下单成功并付款可拿3000元"> </a>
+              <p>4月28日(周一)中午12：00~13：00，用户在魅族官方在线商店完成下单购买手机并成…… </p>
+            </li>
+<li>
+              <h1><a href="/youxipingce/9.html" target="_blank" class="txt4" >厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/youxipingce/" title="查看 游戏评测 中的全部文章" >游戏评测</a></span> <span>浏览次数：
+             82
+              次</span> <a href="/youxipingce/9.html" title="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元" target="_blank"> <img width="575" height="255" src="/uploads/allimg/141027/1944462917-3.jpg" class="attachment-home-thumb wp-post-image" alt="厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元"> </a>
+              <p>在移动互联网时代，网速成为用户最大的追求，4G网络的到来，为用户开辟了新…… </p>
+            </li>
+<li>
+              <h1><a href="/shuajijiaocheng/8.html" target="_blank" class="txt4" >近日有网友在北京市企业信用信息网上查到，北</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/shuajijiaocheng/" title="查看 刷机教程 中的全部文章" >刷机教程</a></span> <span>浏览次数：
+             195
+              次</span> <a href="/shuajijiaocheng/8.html" title="近日有网友在北京市企业信用信息网上查到，北" target="_blank"> <img width="575" height="255" src="/uploads/allimg/140606/22121W960-0.jpg" class="attachment-home-thumb wp-post-image" alt="近日有网友在北京市企业信用信息网上查到，北"> </a>
+              <p>近日有网友在北京市企业信用信息网上查到，北京安兔兔科技有限公司的法定代…… </p>
+            </li>
+<li>
+              <h1><a href="/shuajijiaocheng/10.html" target="_blank" class="txt4" >步步高vivo Xshot真机曝光 1300万像素将支持光学防</a></h1>
+              <span>发表于：2014-10-27</span> <span>分类：<a href="/shuajijiaocheng/" title="查看 刷机教程 中的全部文章" >刷机教程</a></span> <span>浏览次数：
+             97
+              次</span> <a href="/shuajijiaocheng/10.html" title="步步高vivo Xshot真机曝光 1300万像素将支持光学防" target="_blank"> <img width="575" height="255" src="/uploads/141027/1-14102G94G1438.jpg" class="attachment-home-thumb wp-post-image" alt="步步高vivo Xshot真机曝光 1300万像素将支持光学防"> </a>
+              <p>vivo之前在网上正式宣布将在5月7日于北京水立方举行发布会，正式发布vivo旗下…… </p>
+            </li>
+<li>
+              <h1><a href="/anzhuozixun/7.html" target="_blank" class="txt4" >LG新机 L35 入门级的配置表明其主要面向低端用户</a></h1>
+              <span>发表于：2014-06-04</span> <span>分类：<a href="/anzhuozixun/" title="查看 安卓资讯 中的全部文章" >安卓资讯</a></span> <span>浏览次数：
+             56
+              次</span> <a href="/anzhuozixun/7.html" title="LG新机 L35 入门级的配置表明其主要面向低端用户" target="_blank"> <img width="575" height="255" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-home-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端用户"> </a>
+              <p>近日有网友在北京市企业信用信息网上查到，北京安兔兔科技有限公司的法定代…… </p>
+            </li>
+<li>
+              <h1><a href="/xinpinsudi/6.html" target="_blank" class="txt4" >LG新机 L35 入门级的配置表明其主要面向低端用户</a></h1>
+              <span>发表于：2014-06-04</span> <span>分类：<a href="/xinpinsudi/" title="查看 新品速递 中的全部文章" >新品速递</a></span> <span>浏览次数：
+             149
+              次</span> <a href="/xinpinsudi/6.html" title="LG新机 L35 入门级的配置表明其主要面向低端用户" target="_blank"> <img width="575" height="255" src="/uploads/140604/1-140604222510C0.jpg" class="attachment-home-thumb wp-post-image" alt="LG新机 L35 入门级的配置表明其主要面向低端用户"> </a>
+              <p>近日有网友在北京市企业信用信息网上查到，北京安兔兔科技有限公司的法定代…… </p>
+            </li>
+
+            <!--列表--end-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--中间内容结束-->
+    <!--右内容-->
+    <div class="s2">
+      <!--广告开始-->
+      <div class="ad3"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad004.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <!--广告开始-->
+      <div class="ad1"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad007.jpg" width="260" height="150" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="hot">
+        <div class="hot_title">刷机教程</div>
+        <div class="hot_list">
+          <ul>
+          <li><a href="/youxipingce/9.html" target="_blank" class="txt6">厚度堪比iPhone5S 华为G620＂纤细身</a></li>
+<li><a href="/youxipingce/2.html" target="_blank" class="txt6">不服气来跑个分呀！小米3S规格曝</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad3"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad005.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+      <div class="hot">
+        <div class="hot_title">安卓资讯</div>
+        <div class="hot_list">
+          <ul>
+            <li><a href="/anzhuozixun/7.html" target="_blank" class="txt6">LG新机 L35 入门级的配置表明其主</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <!--广告开始-->
+      <div class="ad1"> <a href="#" target="_blank"> <img src="/templets/web/zhanoo_com/ad006.jpg" width="260" height="275" border="0"></a> </div>
+      <!--广告结束-->
+    </div>
+    <!--右内容结束-->
+  </div>
+</div>
+<!--tooter-->
+﻿
+﻿<div class="foot">
+ <div class="footer">
+  <div class="footer_left">
+   <div class="nav">
+     <ul>
+       <li><a href="#" class="txt7">关于我们</a></li>
+	   <li><span>|</span><a href="http://wpa.qq.com/msgrd?v=3&uin=6009709&site=qq&menu=yes" class="txt7" >联系我们</a></li>
+	   <li><span>|</span><a href="#" class="txt7" >谷歌地图</a></li>
+	   <li><span>|</span><a href="#" class="txt7" >百度地图</a></li>
+	    <li><span>|</span><a href="#" class="txt7" >TAG标签归档</a></li>
+	   <li><span>|</span><a href="#" class="txt7" >站长统计</a></li>
+	   <li><span>|</span><a href="http://wpa.qq.com/msgrd?v=3&uin=970003436&site=qq&menu=yes" class="txt7" >QQ联系</a></li>
+     </ul>
+     </div>
+   <div class="copy"><p>版权信息根据你的网站情况来确定如何填写哦 <br/>站窝窝是专业的源码网下载站哦。希望大家常来本站做客，本站不定期分享精品源码供广大的织梦爱好者们下载使用哦。感谢大家的支持。</p></div>
+   <div class="link"><span>友情链接：</span>
+     <ul>
+
+
+  
+     </ul>
+     </div>
+  </div>
+  <div class="footer_icon">
+    <ul>
+      <li><a href="#" title="关注博客"><img src="/templets/web/zhanoo_com/sina.png" alt="新浪微博" border="0"></a></li>
+	  <li><a href="#" title="订阅我们"><img src="/templets/web/zhanoo_com/rss.png" alt="订阅我们" border="0"></a></li>
+    </ul>
+    </div>
+ </div>
+</div>
+<!-- 返回顶部 -->
+	<a id="returnTop" href="javascript:;" style="bottom: -200px; ">回到顶部</a> 
+	<script src="/templets/web/zhanoo_com/jquery-1.6.4.min.js" type="text/javascript"></script> 
+<script src="/templets/web/zhanoo_com/top.js" type="text/javascript"></script>	<!-- End 返回顶部 -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div class="head">
+ 	<div class="header">
+  <!-- 导航开始 -->
+  <div class="menu">
+  <div id="nav">
+  <a href="/" title="织梦58">
+  	<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/logo.png" alt="114源码网" width="141" height="23" border="0"></a>
+    <ul>
+    
+	  <li><a href="/" id='nav_current' >首页</a></li>
+
+      {dede:channel type='top' currentstyle="<li><a href='~typelink~' id='nav_current'>~typename~</a></li>"}
+      <li><a href="[field:typelink/]">[field:typename/]</a></li>
+      {/dede:channel}
+
+    </ul>
+    </div>
+    </div><!-- 导航结束 -->
+  <div class="head_right"><span>
+    <ul>
+      <li><a href="#" title="关注微博">
+      	<img src="{dede:global.cfg_templets_skin/}/zhanoo_com/weibo.png" alt="关注微博" width="25" height="20" border="0"></a></li>
+<!-- 搜索开始-->
+	  <li>
+	  	<form role="search" method="get" id="searchform" action="/plus/search.php" target="_blank">
+	  		<input class="search" type="text" name="q" value="search..." onfocus="if (value ==&#39;search...&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;search...&#39;}">
+	  		<input class="search_btn" type="submit" value=""></form>
+            
+         
+
+	  		</li><!-- 搜索结束 -->
+    </ul></span>
+    </div>
+ </div>	
+</div>
+<!--head结束-->

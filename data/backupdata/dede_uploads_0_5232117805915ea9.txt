@@ -1,0 +1,16 @@
+INSERT INTO `dede_uploads` VALUES('1','1','标配500万像素高清摄像头+美颜自拍 华为G6拍照神','/uploads/140604/1-140604215F1P0.jpg','1','570','385','0','21925','1401890221','1');
+INSERT INTO `dede_uploads` VALUES('2','2','不服气来跑个分呀！小米3S规格曝光 将采用MIUI','/uploads/140604/1-140604221012T1.jpg','1','500','375','0','54222','1401891012','1');
+INSERT INTO `dede_uploads` VALUES('3','3','LG新机 L35 入门级的配置表明其主要面向低端用户','/uploads/140604/1-140604222510C0.jpg','1','600','399','0','150555','1401891910','1');
+INSERT INTO `dede_uploads` VALUES('4','8','近日有网友在北京市企业信用信息网上查到，北','/uploads/allimg/140606/22121W960-0.jpg','1','500','736','0','43618','1402063958','1');
+INSERT INTO `dede_uploads` VALUES('5','9','厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元','/uploads/allimg/141027/19444644b-0.jpg','1','390','458','0','27195','1414410287','1');
+INSERT INTO `dede_uploads` VALUES('6','9','厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元','/uploads/allimg/141027/1944461329-1.jpg','1','326','495','0','26212','1414410291','1');
+INSERT INTO `dede_uploads` VALUES('7','9','厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元','/uploads/allimg/141027/1944462V5-2.jpg','1','294','495','0','28914','1414410292','1');
+INSERT INTO `dede_uploads` VALUES('8','9','厚度堪比iPhone5S 华为G620＂纤细身材＂闪耀千元','/uploads/allimg/141027/1944462917-3.jpg','1','534','458','0','31760','1414410293','1');
+INSERT INTO `dede_uploads` VALUES('9','10','步步高vivo Xshot真机曝光 1300万像素将支持光学防','/uploads/allimg/141027/1945556111-0.jpg','1','600','378','0','32096','1414410357','1');
+INSERT INTO `dede_uploads` VALUES('10','10','步步高vivo Xshot真机曝光 1300万像素将支持光学防','/uploads/allimg/141027/1945551519-1.jpg','1','600','390','0','35266','1414410365','1');
+INSERT INTO `dede_uploads` VALUES('11','10','步步高vivo Xshot真机曝光 1300万像素将支持光学防','/uploads/allimg/141027/1945552625-2.jpg','1','600','392','0','37386','1414410369','1');
+INSERT INTO `dede_uploads` VALUES('12','10','步步高vivo Xshot真机曝光 1300万像素将支持光学防','/uploads/141027/1-14102G94G1438.jpg','1','570','385','0','19040','1414410431','1');
+INSERT INTO `dede_uploads` VALUES('13','11','周一12点 魅族在线商店下单成功并付款可拿3000元','/uploads/allimg/141027/195344JY-0.jpg','1','550','314','0','20148','1414410825','1');
+INSERT INTO `dede_uploads` VALUES('14','12','HTC M8 mini曝光 4.5英寸屏幕四核1.4GHz处理器','/uploads/allimg/141027/19543I209-0.jpg','1','600','600','0','59341','1414410882','1');
+INSERT INTO `dede_uploads` VALUES('15','13','放心了！小米手机3移动TD版下个月获Android 4.4升级','/uploads/allimg/141027/19554W1I-0.png','1','577','386','0','86578','1414410950','1');
+INSERT INTO `dede_uploads` VALUES('16','13','放心了！小米手机3移动TD版下个月获Android 4.4升级','/uploads/141027/1-14102G9562L60.jpg','1','575','255','0','79869','1414410987','1');
